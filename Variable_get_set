@@ -1,0 +1,37 @@
+//SPDX-License-Identifier: MIT
+pragma >=0.8.9;
+
+contract Storage {
+    uint num;
+    string name;
+    bool isMale;
+    address wallet;
+
+    function setNum(uint _num) public{
+        num = _num;
+    }
+    function getNum() public view returns(uint){
+        return num;
+    }
+
+    function setName(string _name) public{
+        name = _name;
+    }
+    function getName() public view returns(string memory){
+       return name;
+   }
+
+   function setIsMale(bool _isMale) public{
+       isMale = _isMale;
+   }
+   function getIsMale() public view returns(bool){
+       return isStudent;
+   }
+
+   function setWallet(address _wallet) public{
+       wallet = _wallet;
+   }
+   function getWallet() public view returns(address){
+       return wallet;
+   }
+}
